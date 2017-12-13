@@ -47,4 +47,4 @@ exp.render([trace1, trace2], layout).then((base) => {
 ```
 
 If you are experiencing any issues with this module open up a ticket and send me a tweet.
-(@notMiloBejda)[https://twitter.com/notMiloBejda]
+[@notMiloBejda](https://twitter.com/notMiloBejda)
