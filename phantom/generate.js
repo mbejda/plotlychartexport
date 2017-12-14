@@ -1,6 +1,9 @@
 var page = new WebPage();
 var system = require('system');
 var args = system.args;
+var fs = require('fs');
+
+
 var props = {};
 args.forEach(function(arg, i) {
 
@@ -13,6 +16,7 @@ args.forEach(function(arg, i) {
 
 var data = props['data'];
 var layout = props['layout'];
+var rootPath = props['rootPath'];
 
 if(layout){
     var layout = atob(layout);
@@ -30,7 +34,9 @@ page.onError = function(error) {
     phantom.exit(1);
 };
 
-page.open("phantom/html/index.html", function (status) {
+
+
+page.open(rootPath+"/phantom/html/index.html", function (status) {
 
 
 
@@ -42,8 +48,8 @@ page.open("phantom/html/index.html", function (status) {
 
     }
 
-    const jquery = page.injectJs("phantom/dep/jquery.js");
-    const plotly = page.injectJs("phantom/dep/plotly-1.31.2.js");
+    const jquery = page.injectJs(rootPath+"/phantom/dep/jquery.js");
+    const plotly = page.injectJs(rootPath+"/phantom/dep/plotly-1.31.2.js");
 
     if(!jquery || !plotly){
 

@@ -1,6 +1,6 @@
 {
   "name": "plotlychartexport",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Render static plot.ly charts on the server",
   "main": "index.js",
   "author": "Milos Bejda <mbejda@live.com>",

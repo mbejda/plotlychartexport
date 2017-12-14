@@ -13,7 +13,8 @@ var phantomPromise = function(plotlyData,layout=false,debug=false) {
         let plotlyDataBase64 = new Buffer(JSON.stringify({payload: plotlyData})).toString('base64');
         let dataArg = `--data=${plotlyDataBase64}`;
         let generator = path.join(__dirname + '/phantom', 'generate.js');
-        let childArgs = [generator, dataArg];
+        let rootPath = `--rootPath=${__dirname}`;
+        let childArgs = [generator, dataArg,rootPath];
 
 
         if (layout) {
