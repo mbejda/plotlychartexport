@@ -1,6 +1,6 @@
 ![](https://www.mbejda.com/content/images/2017/12/Copy-of-oh-javascript--4-.png)
 # Plot.ly Chart Export
-*PlotlyChartExport* uses Phantom.js to render plot.ly charts on the server. It crops the chart, base64 encodes it and returns the encoded chart in the resolving promise.
+*PlotlyChartExport* uses Phantom.js to render plot.ly charts on the server. It crops the chart, base64 encodes it and returns the encoded chart in a resolving promise.
 It does not rely on the filesystem nor does it rely on graphics libraries like `Cairo` making it an effective chart rendering solution for serverless environments.
 
 
