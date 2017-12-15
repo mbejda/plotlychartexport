@@ -4,7 +4,6 @@
 It does not rely on the filesystem nor does it rely on graphics libraries like `Cairo` making it an effective chart rendering solution for serverless environments.
 
 
-
 - Only 1 Dependency
 - Works in Serverless Environments
 - Size < 10MB
@@ -45,6 +44,13 @@ exp.render([trace1, trace2], layout).then((base) => {
 })
 
 ```
+
+## Create a Serverless Chart Export
+Checkout this tutorial I made on how to create serverless chart exports on AWS to see the module in action.
+[https://www.mbejda.com/creating-serverless-chart-exports-with-plotly](https://www.mbejda.com/creating-serverless-chart-exports-with-plotly)
+
+
+
 
 If you are experiencing any issues with this module open up a ticket and send me a tweet.
 [@notMiloBejda](https://twitter.com/notMiloBejda)
