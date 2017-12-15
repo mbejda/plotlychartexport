@@ -47,7 +47,7 @@ exp.render([trace1, trace2], layout).then((base) => {
 
 ## Create a Serverless Chart Export
 Checkout this tutorial I made on how to create serverless chart exports on AWS to see the module in action.
-[https://www.mbejda.com/creating-serverless-chart-exports-with-plotly](https://www.mbejda.com/creating-serverless-chart-exports-with-plotly)
+[https://www.mbejda.com/creating-serverless-plotly-chart-exports](https://www.mbejda.com/creating-serverless-plotly-chart-exports/)
 
 
 
