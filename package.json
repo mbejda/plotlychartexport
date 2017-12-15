@@ -1,9 +1,9 @@
 {
   "name": "plotlychartexport",
-  "version": "1.0.4",
-  "description": "Render static plot.ly charts on the server",
+  "version": "1.0.5",
+  "description": "Export plotly charts on server",
   "main": "index.js",
-  "author": "Milos Bejda <mbejda@live.com>",
+  "author": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/mbejda/plotlychartexport.git"
@@ -11,12 +11,13 @@
   "bugs": {
     "url": "https://github.com/mbejda/plotlychartexport/issues"
   },
-  "keywords":[
+  "keywords": [
     "phantom",
     "phantomjs",
     "plotly chart",
     "plotly",
     "charts",
+    "export plotly charts",
     "static charts",
     "server charts",
     "plotly charts",
@@ -24,11 +25,13 @@
     "serverside charts"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
-  "author": "",
   "license": "MIT",
   "dependencies": {
     "phantomjs-prebuilt": "2.1.16"
+  },
+  "devDependencies": {
+    "jasmine": "2.8.0"
   }
 }
